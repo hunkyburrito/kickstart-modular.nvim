@@ -2,6 +2,8 @@ tags
 test.sh
 .luarc.json
 nvim
-undo
-backup
-swap
+spell/
+lazy-lock.json
+undo/
+backup/
+swap/
