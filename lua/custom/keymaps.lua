@@ -1,9 +1,9 @@
 -- BURRITO BINDS
 -- Mappings
-vim.keymap.set('i', '<C-l>', '<Left>')
-vim.keymap.set('i', '<C-r>', '<Right>')
-vim.keymap.set('i', '<C-d>', '<Down>')
-vim.keymap.set('i', '<C-u>', '<Up>')
+vim.keymap.set('i', '<M-h>', '<Left>')
+vim.keymap.set('i', '<M-l>', '<Right>')
+vim.keymap.set('i', '<M-j>', '<Down>')
+vim.keymap.set('i', '<M-k>', '<Up>')
 vim.keymap.set('i', 'jk', '<ESC>')
 vim.keymap.set('n', '<leader>o', 'o<ESC>')
 vim.keymap.set('n', '<leader>O', 'O<ESC>')
@@ -13,7 +13,7 @@ vim.keymap.set('n', '<leader>O', 'O<ESC>')
 vim.keymap.set({ 'n', 'v' }, '<C-d>', '<C-d>zz')
 vim.keymap.set({ 'n', 'v' }, '<C-u>', '<C-u>zz')
 vim.keymap.set('n', 'J', 'mzJ`z')
-vim.keymap.set('n', '<C-j>', 'mzi<CR><ESC>`z')
+vim.keymap.set('n', '<C-s-j>', 'mzi<CR><ESC>`z')
 vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
 
