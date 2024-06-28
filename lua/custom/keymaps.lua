@@ -21,7 +21,7 @@ vim.keymap.set('n', 'N', 'Nzzzv')
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 
--- Preserve yank after delete
+-- Preserve yank after delete/replace
 vim.keymap.set('x', '<leader>p', '"_dP')
 
 -- Yank to Clipboard
@@ -37,7 +37,7 @@ vim.keymap.set({ 'n', 'v' }, '<leader>d', '"_d')
 vim.keymap.set('n', '<leader>c', '"_c')
 
 -- Format Code
-vim.keymap.set('n', '<leader>f', vim.lsp.buf.format)
+--vim.keymap.set('n', '<leader>f', vim.lsp.buf.format)
 
 -- Quick Fix
 vim.keymap.set('n', '<leader>k', '<cmd>cnext<CR>zz')
