@@ -33,8 +33,8 @@ vim.keymap.set('n', '<leader>p', '"+p')
 vim.keymap.set('n', '<leader>P', '"+P')
 
 -- Preserve Registers after delete
-vim.keymap.set({ 'n', 'v' }, '<leader>d', '"_d')
-vim.keymap.set('n', '<leader>c', '"_c')
+vim.keymap.set({ 'n', 'v' }, '<M-d>', '"_d')
+vim.keymap.set('n', '<M-c>', '"_c')
 
 -- Format Code
 --vim.keymap.set('n', '<leader>f', vim.lsp.buf.format)
