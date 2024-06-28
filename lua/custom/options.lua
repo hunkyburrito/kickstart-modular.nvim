@@ -20,6 +20,10 @@ vim.o.scrolloff = 8
 vim.o.splitright = true
 vim.o.splitbelow = true
 
+-- cursor goes one right after exiting insert
+vim.api.nvim_create_autocmd("InsertLeave", { pattern = "*", command = ":normal! `^"})
+vim.o.virtualedit = 'onemore'
+
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.g.netrw_browse_split = 0
