@@ -3,7 +3,7 @@
 vim.o.autochdir = true
 vim.o.undofile = true
 vim.o.backup = false
-vim.o.swapfile = false
+vim.o.swapfile = true
 vim.o.undodir = vim.fn.expand '~/.config/nvim/undo//'
 vim.o.backupdir = vim.fn.expand '~/.config/nvim/backup//'
 vim.o.directory = vim.fn.expand '~/.config/nvim/swap//'
