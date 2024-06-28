@@ -10,22 +10,22 @@ vim.keymap.set('n', '<leader>O', 'O<ESC>')
 --vim.keymap.set('n', '<leader>h', ':set invhlsearch<CR>')
 
 -- Center Cursor
-vim.keymap.set({ 'n', 'v' }, '<C-d>', '<C-d>zz')
-vim.keymap.set({ 'n', 'v' }, '<C-u>', '<C-u>zz')
+vim.keymap.set({ 'n', 'x' }, '<C-d>', '<C-d>zz')
+vim.keymap.set({ 'n', 'x' }, '<C-u>', '<C-u>zz')
 vim.keymap.set('n', 'J', 'mzJ`z')
 vim.keymap.set('n', '<C-s-j>', 'mzi<CR><ESC>`z')
 vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
 
 -- Visual Moving
-vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
-vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
+vim.keymap.set('x', 'J', ":m '>+1<CR>gv=gv")
+vim.keymap.set('x', 'K', ":m '<-2<CR>gv=gv")
 
 -- Preserve yank after delete/replace
 vim.keymap.set('x', '<leader>p', '"_dP')
 
 -- Yank to Clipboard
-vim.keymap.set({ 'n', 'v' }, '<leader>y', '"+y')
+vim.keymap.set({ 'n', 'x' }, '<leader>y', '"+y')
 vim.keymap.set('n', '<leader>Y', '"+Y')
 
 -- Paste to Clipboard
@@ -33,7 +33,7 @@ vim.keymap.set('n', '<leader>p', '"+p')
 vim.keymap.set('n', '<leader>P', '"+P')
 
 -- Preserve Registers after delete
-vim.keymap.set({ 'n', 'v' }, '<M-d>', '"_d')
+vim.keymap.set({ 'n', 'x' }, '<M-d>', '"_d')
 vim.keymap.set('n', '<M-c>', '"_c')
 
 -- Format Code
