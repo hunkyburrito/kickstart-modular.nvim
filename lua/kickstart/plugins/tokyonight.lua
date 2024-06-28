@@ -14,6 +14,10 @@ return {
 
       -- You can configure highlights by doing something like:
       vim.cmd.hi 'Comment gui=none'
+      vim.cmd.hi 'DiffAdd guibg=#20503b'
+      vim.cmd.hi 'DiffDelete guibg=#47222c'
+      vim.cmd.hi 'DiffChange guibg=#203850'
+      vim.cmd.hi 'DiffText guibg=#205895'
     end,
   },
 }
