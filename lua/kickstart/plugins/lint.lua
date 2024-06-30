@@ -7,7 +7,7 @@ return {
       local lint = require 'lint'
       lint.linters_by_ft = {
         markdown = { 'textlint' },
-        text = { 'textlint' },
+        --text = { 'textlint' },
         c = { 'cpplint' },
         cpp = { 'cpplint' },
         python = { 'ruff' },
