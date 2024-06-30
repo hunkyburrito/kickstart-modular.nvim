@@ -24,6 +24,16 @@ vim.o.splitbelow = true
 vim.api.nvim_create_autocmd("InsertLeave", { pattern = "*", command = ":normal! `^"})
 vim.o.virtualedit = 'onemore'
 
+-- turn off lsp diagnostics for diffs
+local function check_diff() return not vim.wo.diff end
+vim.lsp.handlers["textDocument/publishDiagnostics"] =
+vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+  underline = check_diff,
+  signs = check_diff,
+  update_in_insert = check_diff,
+  virtual_text = check_diff
+})
+
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.g.netrw_browse_split = 0
