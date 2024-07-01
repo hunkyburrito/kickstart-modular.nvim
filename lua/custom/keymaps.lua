@@ -21,6 +21,8 @@ vim.keymap.set('n', 'N', 'Nzzzv')
 -- Visual Moving
 vim.keymap.set('x', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('x', 'K', ":m '<-2<CR>gv=gv")
+vim.keymap.set('x', 'H', "<gv")
+vim.keymap.set('x', 'L', ">gv")
 
 -- Preserve yank after delete/replace
 vim.keymap.set('x', '<leader>p', '"_dP')
