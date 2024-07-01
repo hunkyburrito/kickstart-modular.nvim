@@ -7,6 +7,7 @@ vim.keymap.set('i', '<M-k>', '<Up>')
 vim.keymap.set('i', 'jk', '<ESC>')
 vim.keymap.set('n', '<leader>o', 'o<ESC>')
 vim.keymap.set('n', '<leader>O', 'O<ESC>')
+vim.keymap.set('n', 'ZA', '<cmd>qa!<CR>')
 --vim.keymap.set('n', '<leader>h', ':set invhlsearch<CR>')
 
 -- Center Cursor
