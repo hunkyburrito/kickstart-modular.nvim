@@ -4,5 +4,5 @@
 return {
   'ray-x/lsp_signature.nvim',
   event = 'BufReadPre', -- LspAttach is too late? (gets loaded but uses default config)
-  opts = { toggle_key = '<C-K>', hint_prefix = '󰧞 ' },
+  opts = { toggle_key = '<C-K>', toggle_key_flip_floatwin_setting = true, hint_prefix = '󰧞 ' },
 }
