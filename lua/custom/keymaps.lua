@@ -18,6 +18,12 @@ vim.keymap.set('n', '<C-s-j>', 'mzi<CR><ESC>`z')
 vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
 
+-- Window Resize
+vim.keymap.set('n', '<m-s-,>', '<c-w><lt>')
+vim.keymap.set('n', '<m-s-.>', '<c-w>>')
+vim.keymap.set('n', '<m-s-=>', '<c-w>+')
+vim.keymap.set('n', '<m-s-->', '<c-w>-')
+
 -- Visual Moving
 vim.keymap.set('x', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('x', 'K', ":m '<-2<CR>gv=gv")
