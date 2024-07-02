@@ -19,6 +19,7 @@ vim.o.smarttab = true
 vim.o.scrolloff = 8
 vim.o.splitright = true
 vim.o.splitbelow = true
+vim.opt.fillchars:append { diff = '/' }
 
 -- cursor goes one right after exiting insert
 vim.api.nvim_create_autocmd("InsertLeave", { pattern = "*", command = ":normal! `^"})
