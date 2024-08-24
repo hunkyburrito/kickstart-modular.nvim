@@ -6,8 +6,6 @@ return {
     config = function()
       local lint = require 'lint'
       lint.linters_by_ft = {
-        markdown = { 'textlint' },
-        --text = { 'textlint' },
         c = { 'cpplint' },
         cpp = { 'cpplint' },
         python = { 'ruff' },
@@ -16,6 +14,8 @@ return {
         css = { 'stylelint' },
         json = { 'jsonlint' },
         yaml = { 'yamllint' },
+        text = { 'vale' },
+        markdown = { 'vale' }
       }
 
       -- To allow other plugins to add linters to require('lint').linters_by_ft,
