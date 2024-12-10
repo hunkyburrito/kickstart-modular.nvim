@@ -31,7 +31,7 @@ vim.keymap.set('x', 'H', "<gv")
 vim.keymap.set('x', 'L', ">gv")
 
 -- Preserve yank after delete/replace
-vim.keymap.set('x', '<leader>p', '"_dP')
+vim.keymap.set('x', '<leader>p', '"_d')
 
 -- Yank to Clipboard
 vim.keymap.set({ 'n', 'x' }, '<leader>y', '"+y')
