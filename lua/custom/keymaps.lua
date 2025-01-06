@@ -30,6 +30,9 @@ vim.keymap.set('x', 'K', ":m '<-2<CR>gv=gv")
 vim.keymap.set('x', 'H', "<gv")
 vim.keymap.set('x', 'L', ">gv")
 
+-- Go after yank in visual mode
+vim.keymap.set('x', 'y', 'mzy`z')
+
 -- Preserve yank after delete/replace
 vim.keymap.set('x', '<leader>p', '"_d')
 
@@ -37,16 +40,13 @@ vim.keymap.set('x', '<leader>p', '"_d')
 vim.keymap.set({ 'n', 'x' }, '<leader>y', '"+y')
 vim.keymap.set('n', '<leader>Y', '"+Y')
 
--- Paste to Clipboard
-vim.keymap.set('n', '<leader>p', '"+p')
-vim.keymap.set('n', '<leader>P', '"+P')
+-- Paste from Clipboard
+vim.keymap.set('n', '<leader>p', '"+gp')
+vim.keymap.set('n', '<leader>P', '"+gP')
 
 -- Preserve Registers after delete
 vim.keymap.set({ 'n', 'x' }, '<M-d>', '"_d')
 vim.keymap.set('n', '<M-c>', '"_c')
-
--- Format Code
---vim.keymap.set('n', '<leader>f', vim.lsp.buf.format)
 
 -- Quick Fix
 vim.keymap.set('n', '<leader>k', '<cmd>cnext<CR>zz')
