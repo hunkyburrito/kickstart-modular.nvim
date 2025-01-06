@@ -8,7 +8,6 @@ vim.keymap.set('i', 'jk', '<ESC>')
 vim.keymap.set('n', '<leader>o', 'o<ESC>')
 vim.keymap.set('n', '<leader>O', 'O<ESC>')
 vim.keymap.set('n', 'ZA', '<cmd>qa!<CR>')
---vim.keymap.set('n', '<leader>h', ':set invhlsearch<CR>')
 
 -- Center Cursor
 vim.keymap.set({ 'n', 'x' }, '<C-d>', '<C-d>zz')
@@ -27,8 +26,8 @@ vim.keymap.set('n', '<m-s-->', '<c-w>-')
 -- Visual Moving
 vim.keymap.set('x', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('x', 'K', ":m '<-2<CR>gv=gv")
-vim.keymap.set('x', 'H', "<gv")
-vim.keymap.set('x', 'L', ">gv")
+vim.keymap.set('x', 'H', '<gv')
+vim.keymap.set('x', 'L', '>gv')
 
 -- Go after yank in visual mode
 vim.keymap.set('x', 'y', 'mzy`z')
@@ -49,7 +48,7 @@ vim.keymap.set({ 'n', 'x' }, '<M-d>', '"_d')
 vim.keymap.set('n', '<M-c>', '"_c')
 
 -- Quick Fix
-vim.keymap.set('n', '<leader>k', '<cmd>cnext<CR>zz')
-vim.keymap.set('n', '<leader>j', '<cmd>cprev<CR>zz')
+vim.keymap.set('n', '<M-n>', '<cmd>cnext<CR>zz')
+vim.keymap.set('n', '<M-p', '<cmd>cprev<CR>zz')
 vim.keymap.set('n', '<C-M-n>', '<cmd>lnext<CR>zz')
 vim.keymap.set('n', '<C-M-p>', '<cmd>lprev<CR>zz')
