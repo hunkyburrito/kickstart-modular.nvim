@@ -49,6 +49,6 @@ vim.keymap.set('n', '<M-c>', '"_c')
 
 -- Quick Fix
 vim.keymap.set('n', '<M-n>', '<cmd>cnext<CR>zz')
-vim.keymap.set('n', '<M-p', '<cmd>cprev<CR>zz')
+vim.keymap.set('n', '<M-p>', '<cmd>cprev<CR>zz')
 vim.keymap.set('n', '<C-M-n>', '<cmd>lnext<CR>zz')
 vim.keymap.set('n', '<C-M-p>', '<cmd>lprev<CR>zz')
