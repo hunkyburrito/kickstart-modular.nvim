@@ -1,6 +1,6 @@
 -- BURRITO OPTS
 --vim.o.autoread = true
-vim.o.autochdir = true
+--vim.o.autochdir = true
 vim.o.undofile = true
 vim.o.backup = false
 vim.o.swapfile = true

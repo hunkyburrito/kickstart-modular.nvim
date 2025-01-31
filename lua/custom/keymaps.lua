@@ -52,3 +52,6 @@ vim.keymap.set('n', '<M-n>', '<cmd>cnext<CR>zz')
 vim.keymap.set('n', '<M-p>', '<cmd>cprev<CR>zz')
 vim.keymap.set('n', '<C-M-n>', '<cmd>lnext<CR>zz')
 vim.keymap.set('n', '<C-M-p>', '<cmd>lprev<CR>zz')
+
+-- Toggle autochdir
+vim.keymap.set('n', '<leader>wc', '<cmd>set autochdir!<CR>')
