@@ -54,4 +54,7 @@ vim.keymap.set('n', '<C-M-n>', '<cmd>lnext<CR>zz')
 vim.keymap.set('n', '<C-M-p>', '<cmd>lprev<CR>zz')
 
 -- Toggle autochdir
-vim.keymap.set('n', '<leader>wc', '<cmd>set autochdir!<CR>')
+vim.keymap.set('n', '<leader>tc', '<cmd>set autochdir!<CR>')
+
+-- Toggle diagnostics
+vim.keymap.set('n', '<leader>td', function() vim.diagnostic.enable((not vim.diagnostic.is_enabled()),{ns_id=nil,bufnr=0}) end)
