@@ -8,7 +8,7 @@ return {
       lint.linters_by_ft = {
         c = { 'cpplint' },
         cpp = { 'cpplint' },
-        python = { 'ruff' },
+        --python = { 'ruff' },
         bash = { 'shellcheck' },
         html = { 'htmlhint' },
         css = { 'stylelint' },
