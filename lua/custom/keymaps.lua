@@ -50,8 +50,8 @@ vim.keymap.set('n', '<M-c>', '"_c')
 -- Quick Fix
 vim.keymap.set('n', '<M-n>', '<cmd>cnext<CR>zz')
 vim.keymap.set('n', '<M-p>', '<cmd>cprev<CR>zz')
-vim.keymap.set('n', '<C-M-n>', '<cmd>lnext<CR>zz')
-vim.keymap.set('n', '<C-M-p>', '<cmd>lprev<CR>zz')
+vim.keymap.set('n', '<M-N>', '<cmd>lnext<CR>zz')
+vim.keymap.set('n', '<M-P>', '<cmd>lprev<CR>zz')
 
 -- Toggle autochdir
 vim.keymap.set('n', '<leader>tc', '<cmd>set autochdir!<CR>')
