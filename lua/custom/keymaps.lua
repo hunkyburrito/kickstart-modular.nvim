@@ -32,20 +32,17 @@ vim.keymap.set('x', 'L', '>gv')
 -- Go after yank in visual mode
 vim.keymap.set('x', 'y', 'mzy`z')
 
--- Preserve yank after delete/replace
-vim.keymap.set('x', '<leader>p', '"_d')
-
 -- Yank to Clipboard
 vim.keymap.set({ 'n', 'x' }, '<leader>y', '"+y')
 vim.keymap.set('n', '<leader>Y', '"+Y')
 
 -- Paste from Clipboard
-vim.keymap.set('n', '<leader>p', '"+gp')
-vim.keymap.set('n', '<leader>P', '"+gP')
+vim.keymap.set({'n', 'x'}, '<leader>p', '"+gp')
+vim.keymap.set({'n', 'x'}, '<leader>P', '"+gP')
 
 -- Preserve Registers after delete
 vim.keymap.set({ 'n', 'x' }, '<M-d>', '"_d')
-vim.keymap.set('n', '<M-c>', '"_c')
+vim.keymap.set({'n', 'x'}, '<M-c>', '"_c')
 
 -- Quick Fix
 vim.keymap.set('n', '<M-n>', '<cmd>cnext<CR>zz')
@@ -54,7 +51,7 @@ vim.keymap.set('n', '<M-N>', '<cmd>lnext<CR>zz')
 vim.keymap.set('n', '<M-P>', '<cmd>lprev<CR>zz')
 
 -- Toggle autochdir
-vim.keymap.set('n', '<leader>tc', '<cmd>set autochdir!<CR>')
+vim.keymap.set('n', '<leader>tc', '<cmd>setlocal autochdir!<CR>')
 
 -- Toggle diagnostics
 vim.keymap.set('n', '<leader>td', function() vim.diagnostic.enable((not vim.diagnostic.is_enabled()),{ns_id=nil,bufnr=0}) end)
