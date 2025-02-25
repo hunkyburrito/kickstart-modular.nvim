@@ -25,6 +25,13 @@ vim.opt.fillchars:append { diff = '/' }
 vim.api.nvim_create_autocmd("InsertLeave", { pattern = "*", command = ":normal! `^"})
 vim.o.virtualedit = 'onemore'
 
+-- You can configure highlights by doing something like:
+vim.cmd.hi 'Comment gui=none'
+vim.cmd.hi 'DiffAdd guibg=#20503b'
+vim.cmd.hi 'DiffDelete guibg=#47222c'
+vim.cmd.hi 'DiffChange guibg=#203850'
+vim.cmd.hi 'DiffText guibg=#205895'
+
 -- turn off lsp diagnostics for diffs
 local function check_diff() return not vim.wo.diff end
 vim.lsp.handlers["textDocument/publishDiagnostics"] =
