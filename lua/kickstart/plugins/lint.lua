@@ -6,7 +6,7 @@ return {
     config = function()
       local lint = require 'lint'
       lint.linters_by_ft = {
-        c = { 'cpplint' },
+        --c = { 'cpplint' },
         cpp = { 'cpplint' },
         --python = { 'ruff' },
         bash = { 'shellcheck' },
